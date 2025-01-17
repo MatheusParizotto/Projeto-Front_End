@@ -11,10 +11,12 @@ function adicionarTarefa() {
         // Mensagem de erro
         let mensagemErro = "Digite uma tarefa para adicionar a sua lista";
         mensagem.textContent = mensagemErro;
+        mensagem.style.color = "red"
     } else {
         // Mensagem de sucesso
         let mensagemSucesso = "Tarefa adicionada com sucesso!";
         mensagem.textContent = mensagemSucesso;
+        mensagem.style.color = "green"
 
         // Adiciona a tarefa digitada no input em uma lista ul
         const listaTarefas = document.getElementById("listaTarefas")
